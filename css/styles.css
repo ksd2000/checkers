@@ -1,5 +1,4 @@
 /* checkers */
-
 .checkers{
   display: flex;
   flex-wrap: wrap;
@@ -49,20 +48,15 @@
 .elem_black {
   background-color: rgb(156, 72, 0);
 }
-
-/* gamer */
-
-.checkers-gamer{
-  width: 20%;
-  height: 40vw;
-  margin-top: 3vw;
-  margin-left: 3vw;
+.elem_black_blue {
+  background-color: rgb(193, 125, 66);
 }
+
+/* check */
 .check{
   display: none;
   width: 64%;
   height: 3.5vw;
-  background-color: white;
   border-radius: 3vw;
   position: absolute;
   top: 0.7vw;
@@ -73,8 +67,72 @@
   display: block;
   background-color: black;
 }
+.check_black_queen{
+  display: block;
+  background-color: black;
+}
+.check_black_queen::after{
+  content: "";
+  width: 76%;
+  height: 76%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(95, 95, 99);
+  top: 12.3%;
+  left: 11.3%;
+}
 .check_white{
   display: block;
   background-color: white;
 }
+.check_white_queen{
+  display: block;
+  background-color: white;
+}
+.check_white_queen::after{
+  content: "";
+  width: 76%;
+  height: 76%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(220, 218, 163);
+  top: 12.3%;
+  left: 11.3%;
+}
 
+/* gamer */
+.gamer{
+  width: 20%;
+  height: 40vw;
+  margin-top: 3vw;
+  margin-left: 3vw;
+}
+.gamer-white,
+.gamer-black{
+  height: 5vw;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+.gamer__count{
+  height: 3vw;
+  padding-top: 1vw;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+.gamer_inf{
+  height: 5vw;
+  font-size: 18px;
+  color: rgb(156, 72, 0);
+  font-weight: 600;
+  background-color: blanchedalmond;
+}
+.start{
+  margin-top: 2vw;
+  height: 2vw;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
